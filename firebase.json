@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "dodo-chat-app",
     "public": "build",
     "ignore": [
       "firebase.json",
