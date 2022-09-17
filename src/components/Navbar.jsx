@@ -9,7 +9,7 @@ const Navbar = () => {
           src="https://images.pexels.com/photos/11500401/pexels-photo-11500401.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
           alt="dp"
         />
-        <span>DODO</span>
+        <span>Jane</span>
         <button>logout</button>
       </div>
     </div>
