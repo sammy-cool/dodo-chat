@@ -5,7 +5,7 @@ import { auth, storage, db } from "../firebase";
 import { useState } from "react";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [error, setError] = useState(false);
@@ -36,7 +36,7 @@ const Register = () => {
               displayName,
               photoURL: downloadURL,
             });
-            console.log("File available at", downloadURL);
+            // console.log("File available at", downloadURL);
 
             await setDoc(doc(db, "users", res.user.uid), {
               uid: res.user.uid,
@@ -72,7 +72,9 @@ const Register = () => {
           <button>Sign up</button>
           {error && <span>Something went wrong</span>}
         </form>
-        <p>have account? &nbsp; Login</p>
+        <p>
+          have account? &nbsp; <Link to="/login">Login</Link>
+        </p>
       </div>
     </div>
   );

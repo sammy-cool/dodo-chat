@@ -81,12 +81,22 @@
                 border: none;
                 cursor: pointer;
             }
+
+            span {
+                color: tomato;
+                font-weight: bold;
+            }
         }
 
         p {
             color: #084b47cc;
             font-size: 12px;
             margin-top: 10px;
+
+            a {
+                color: tomato;
+                font-weight: bold;
+            }
         }
     }
 }
@@ -158,6 +168,9 @@
                         @include tablet {
                             position: absolute;
                             bottom: 10px;
+                            background-color: #ffffff;
+                            color: #084b47cc;
+                            font-weight: bold;
                         }
                     }
                 }
