@@ -18,11 +18,28 @@
 
 
 .form-container {
-    background-color: coral;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: rgb(1, 65, 87);
+        background-image: url('../src/images/blur-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        // filter: blur(8px);
+        // -webkit-filter: blur(8px);
+    
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;  
+    }
 
     .form-wrapper {
         background-color: #ffffff;
@@ -42,6 +59,7 @@
         .title {
             color: #084b47cc;
             font-size: 12px;
+            font-weight: bold;
         }
 
         form {
@@ -102,11 +120,28 @@
 }
 
 .home {
-    background-color: rgb(1, 65, 87);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: rgb(1, 65, 87);
+        background-image: url('../src/images/blur-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // filter: blur(3px);
+        // -webkit-filter: blur(3px);
+    
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;  
+    }
 
     .container {
         border: 1px solid #ffffff;
@@ -254,7 +289,7 @@
             }
 
             .messages {
-                background-color: #ddddf7;
+                background-color: #ecfaf9cc;
                 padding: 10px;
                 height: calc(100% - 160px);
                 overflow-y: scroll;
@@ -294,6 +329,7 @@
 
                         img {
                             width: 50%;
+                            border-radius: 10px;
                         }
                     }
 
