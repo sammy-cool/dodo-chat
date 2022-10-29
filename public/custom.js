@@ -16,4 +16,4 @@ const todayDate = new Date();
             newJem.style.backgroundPosition = 'center';
             newJem.style.backgroundRepeat = 'no-repeat';
             newJem.style.backgroundSize = 'cover';            
-      }
+      };
