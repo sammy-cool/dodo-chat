@@ -8,10 +8,10 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <span className="logo">DODO | chat</span>
+      <h1 className="logo">DODO | chat</h1>
       <div className="user">
         <img src={currentUser.photoURL} alt="dp" />
-        <span>{currentUser.displayName}</span>
+        <h2>{currentUser.displayName}</h2>
         <button onClick={() => signOut(auth)}>logout</button>
       </div>
     </div>

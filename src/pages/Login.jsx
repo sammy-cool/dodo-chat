@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
+import MetaData from "../metaData";
 
 const Login = () => {
   const [error, setError] = useState(false);
@@ -22,10 +23,13 @@ const Login = () => {
   };
 
   return (
+    <>
+    <MetaData title="Login with" />
+
     <div className="form-container" id="randomDashImage">
       <div className="form-wrapper">
-        <span className="logo">DODO | chat</span>
-        <span className="title">Login</span>
+        <h1 className="logo">DODO | chat</h1>
+        <h2 className="title">Login</h2>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
           <input type="password" placeholder="password" />
@@ -37,6 +41,7 @@ const Login = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 

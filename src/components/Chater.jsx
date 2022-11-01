@@ -9,7 +9,7 @@ const Chater = () => {
   return (
     <div className="chater">
       <div className="chaterInfo">
-        <span>Jane</span>
+        <h3>Jane</h3>
         <div className="chaterIcons">
           <img src={vCall} alt="vCall" />
           <img src={addFreind} alt="addFreind" />

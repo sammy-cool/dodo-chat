@@ -6,6 +6,7 @@ import { useState } from "react";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { Link, useNavigate } from "react-router-dom";
+import MetaData from "../metaData";
 
 const Register = () => {
   const [error, setError] = useState(false);
@@ -56,10 +57,13 @@ const Register = () => {
   };
 
   return (
+    <>
+    <MetaData title="Register with" />
+
     <div className="form-container" id="randomDashImage">
       <div className="form-wrapper">
-        <span className="logo">DODO | chat</span>
-        <span className="title">Register</span>
+        <h1 className="logo">DODO | chat</h1>
+        <h2 className="title">Register</h2>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="display name" />
           <input type="email" placeholder="email" />
@@ -77,6 +81,7 @@ const Register = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 
