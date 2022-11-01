@@ -22,7 +22,7 @@ const Login = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container" id="randomDashImage">
       <div className="form-wrapper">
         <span className="logo">DODO | chat</span>
         <span className="title">Login</span>

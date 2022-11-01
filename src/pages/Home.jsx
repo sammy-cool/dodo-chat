@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id="randomDashImage">
       <div className="container">
         <Sidebar />
         <Chater />
