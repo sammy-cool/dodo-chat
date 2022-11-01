@@ -8,16 +8,7 @@ const MetaData = ({ title }) => {
   const currentYear = todayDate.getFullYear();
   const titleContent = `DODO | chat - ${currentMonth} (${currentYear})`;
 
-  var canonicalUrl = '';
-  if( window.location.pathname === '/' ) {
-    canonicalUrl = "https://dodo-chat-app.web.app"
-  } else if ( window.location.pathname === '/login' ) {
-    canonicalUrl = "https://dodo-chat-app.web.app/login"
-  } else if ( window.location.pathname === '/register' ) {
-    canonicalUrl = "https://dodo-chat-app.web.app/register"
-  } else {
-    canonicalUrl = "https://dodo-chat-app.web.app"
-  }
+  var canonicalUrl = window.location.href ;
 
     return (
     <Helmet htmlAttributes={{ lang: 'en' }}>

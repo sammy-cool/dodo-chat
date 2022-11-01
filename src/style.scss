@@ -1,5 +1,5 @@
 @mixin trickyRespon {
-    @media screen and (max-width: 1350px) {
+    @media screen and (max-width: 1400px) {
         @content;
     }
 }
