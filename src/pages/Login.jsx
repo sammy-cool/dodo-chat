@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import MetaData from "../metaData";
+import brandLogo from "../images/dodo-chat-logo1.png"
 
 const Login = () => {
   const [error, setError] = useState(false);
@@ -28,7 +29,7 @@ const Login = () => {
 
     <div className="form-container" id="randomDashImage">
       <div className="form-wrapper">
-        <h1 className="logo">DODO | chat</h1>
+        <img className="logo" src={brandLogo} alt="brandLogo" />
         <h2 className="title">Login</h2>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
@@ -37,7 +38,7 @@ const Login = () => {
           {error && <span>Something went wrong</span>}
         </form>
         <p>
-          no account?no worry! &nbsp; <Link to="/register">Register</Link>
+          no account?no worry! &nbsp; <Link to="/register">Register</Link>&nbsp; here!
         </p>
       </div>
     </div>

@@ -7,6 +7,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { Link, useNavigate } from "react-router-dom";
 import MetaData from "../metaData";
+import brandLogo from "../images/dodo-chat-logo1.png"
 
 const Register = () => {
   const [error, setError] = useState(false);
@@ -62,7 +63,7 @@ const Register = () => {
 
     <div className="form-container" id="randomDashImage">
       <div className="form-wrapper">
-        <h1 className="logo">DODO | chat</h1>
+        <img className="logo" src={brandLogo} alt="brandLogo" />
         <h2 className="title">Register</h2>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="display name" />
@@ -71,13 +72,13 @@ const Register = () => {
           <input style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
             <img src={addAvatar} alt="addAvatar" />
-            <span>your dp</span>
+            <span>Profile Pic</span>
           </label>
           <button>Sign up</button>
           {error && <span>Something went wrong</span>}
         </form>
         <p>
-          have account? &nbsp; <Link to="/login">Login</Link>
+          have account? &nbsp; <Link to="/login">Login</Link>&nbsp; here!
         </p>
       </div>
     </div>
