@@ -38,7 +38,7 @@ $head_color: darkBlue;
         content: '';
         position: absolute;
         background-color: rgb(1, 65, 87);
-        background-image: url('../src/images/blur-bg.jpg');
+        background-image: url('../src/images/cutething.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;    
@@ -143,7 +143,7 @@ $head_color: darkBlue;
         content: '';
         position: absolute;
         background-color: rgb(1, 65, 87);
-        background-image: url('../src/images/light-house.png');
+        background-image: url('../src/images/cutething.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -237,6 +237,17 @@ $head_color: darkBlue;
 
                         @include tablet {
                             bottom: 10px;
+                            background: rgba( 255, 255, 255, 0.747 );
+                            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                            border: 1px solid rgba( 255, 255, 255, 0.18 );
+                            border-radius: 3px 10px 3px 10px;
+                            color: $head_color;
+                            font-weight: 300;
+                        }
+
+                        @include mobile {
+                            bottom: 27px;
+                            position: fixed;
                             background: rgba( 255, 255, 255, 0.747 );
                             box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
                             border: 1px solid rgba( 255, 255, 255, 0.18 );
