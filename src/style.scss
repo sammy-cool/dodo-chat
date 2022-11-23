@@ -310,7 +310,7 @@ $head_color: darkBlue;
                 }
 
                 p {
-                    color: lightgray;
+                    color: $head_color;
                     font-size: 14px;
                 }
             }
